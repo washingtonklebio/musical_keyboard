@@ -1,0 +1,86 @@
+@import "./reset.css";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.keyboard {
+  width: 35em;
+  height: auto;
+  background: linear-gradient(to top, #434343, #000000);
+  border-radius: 2px 2px 5px 5px;
+}
+
+.keyboard .painel {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 20px;
+  background-color: #000000;
+}
+
+.painel span {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background: #504658;
+  background: linear-gradient(135deg, #504658 55%, rgba(255, 255, 255, 1) 55%);
+}
+
+.painel div {
+  width: 100px;
+  height: 60px;
+  border-radius: 5px;
+  background: #504658;
+}
+
+.keyboard .piano-key {
+  display: flex;
+  width: 30em;
+}
+
+.keyboard .piano-key ul {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.keyboard .piano-key ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 100px;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  padding: 0 2px;
+  width: 18px;
+
+  background: #fff;
+}
+
+.keyboard .piano-key ul li + li {
+  margin-left: 1px;
+}
+
+.keyboard .piano-key ul li:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.keyboard .piano-key ul li:active {
+  background: #c0ffb3;
+}
+
+div ul li span {
+  background: #1b262c;
+  width: 8px;
+  height: 60px;
+  margin-left: 13px;
+}
+
+div ul li span:active {
+  background: #ff5733;
+}
